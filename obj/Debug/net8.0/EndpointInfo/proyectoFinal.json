@@ -1,0 +1,3407 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "proyectoFinal",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Administrador/Ver": {
+      "get": {
+        "tags": [
+          "Administrador"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Administrador"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Administrador"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Administrador"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Administrador/Crear": {
+      "post": {
+        "tags": [
+          "Administrador"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Administrador/Editar perfil adm": {
+      "put": {
+        "tags": [
+          "Administrador"
+        ],
+        "parameters": [
+          {
+            "name": "idAdministrador",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Administrador/Registro": {
+      "post": {
+        "tags": [
+          "Administrador"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AuditLog": {
+      "post": {
+        "tags": [
+          "AuditLog"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuditLogDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuditLogDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuditLogDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditLogDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditLogDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditLogDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AuditLog/{id}": {
+      "get": {
+        "tags": [
+          "AuditLog"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditLogDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditLogDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditLogDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Cliente/Enlistar Clientes": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Cliente/crear-cliente": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cliente/Modificar datos cliente": {
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "idCliente",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Contrato": {
+      "get": {
+        "tags": [
+          "Contrato"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Contrato"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Contrato"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Contrato"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Contrato"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contrato"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contrato"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contrato"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Contrato"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Contrato"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Contrato"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Contrato/{id}": {
+      "get": {
+        "tags": [
+          "Contrato"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContratoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContratoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContratoDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Contrato"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contrato"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contrato"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contrato"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Contrato"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Contrato/auth/doblefactor": {
+      "post": {
+        "tags": [
+          "Contrato"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudDobleFactor"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudDobleFactor"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudDobleFactor"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaDobleFactor"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaDobleFactor"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaDobleFactor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Contrato/cliente/{idCliente}": {
+      "get": {
+        "tags": [
+          "Contrato"
+        ],
+        "parameters": [
+          {
+            "name": "idCliente",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContratoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContratoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContratoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Contrato/firmar": {
+      "post": {
+        "tags": [
+          "Contrato"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FirmaContratoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FirmaContratoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FirmaContratoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaFirmaDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaFirmaDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaFirmaDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Contrato/ver/{id}": {
+      "get": {
+        "tags": [
+          "Contrato"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContratoVisualizacionDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContratoVisualizacionDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContratoVisualizacionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Documento/{id}": {
+      "get": {
+        "tags": [
+          "Documento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DocumentoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DocumentoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DocumentoDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Documento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Documento/download/{id}": {
+      "get": {
+        "tags": [
+          "Documento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Documento": {
+      "post": {
+        "tags": [
+          "Documento"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "File": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "idSolicitudCredito": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Tipo": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "File": {
+                  "style": "form"
+                },
+                "idSolicitudCredito": {
+                  "style": "form"
+                },
+                "Tipo": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DocumentoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DocumentoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DocumentoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/EvaluacionCredito": {
+      "post": {
+        "tags": [
+          "EvaluacionCredito"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvaluacionCreditoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvaluacionCreditoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvaluacionCreditoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvaluacionCreditoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvaluacionCreditoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvaluacionCreditoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/EvaluacionCredito/{id}": {
+      "get": {
+        "tags": [
+          "EvaluacionCredito"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvaluacionCreditoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvaluacionCreditoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvaluacionCreditoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Notificacion": {
+      "post": {
+        "tags": [
+          "Notificacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificacionDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificacionDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificacionDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificacionDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificacionDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificacionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Notificacion/{id}": {
+      "get": {
+        "tags": [
+          "Notificacion"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificacionDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificacionDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificacionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Parametro/Lista": {
+      "get": {
+        "tags": [
+          "Parametro"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Parametro"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Parametro"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Parametro"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Parametro/modificar": {
+      "put": {
+        "tags": [
+          "Parametro"
+        ],
+        "parameters": [
+          {
+            "name": "idParametro",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Parametro"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Parametro"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Parametro"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Parametro/Crear": {
+      "post": {
+        "tags": [
+          "Parametro"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Parametro"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Parametro"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Parametro"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Parametro/{id}": {
+      "delete": {
+        "tags": [
+          "Parametro"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ReporteFinanciero": {
+      "get": {
+        "tags": [
+          "ReporteFinanciero"
+        ],
+        "parameters": [
+          {
+            "name": "fechaInicio",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "fechaFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "estado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ReporteFinanciero"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ReporteFinanciero"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ReporteFinanciero"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Seguimiento/solicitudes/{clienteId}": {
+      "get": {
+        "tags": [
+          "Seguimiento"
+        ],
+        "parameters": [
+          {
+            "name": "clienteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCreditoListDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCreditoListDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCreditoListDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Seguimiento/pagos/{solicitudId}": {
+      "get": {
+        "tags": [
+          "Seguimiento"
+        ],
+        "parameters": [
+          {
+            "name": "solicitudId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PagoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PagoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PagoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Seguimiento/pago/{pagoId}": {
+      "get": {
+        "tags": [
+          "Seguimiento"
+        ],
+        "parameters": [
+          {
+            "name": "pagoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PagoDetalleDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PagoDetalleDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PagoDetalleDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Seguimiento/alertas/{solicitudId}": {
+      "get": {
+        "tags": [
+          "Seguimiento"
+        ],
+        "parameters": [
+          {
+            "name": "solicitudId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AlertaDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AlertaDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AlertaDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Seguimiento/reporte/{clienteId}": {
+      "get": {
+        "tags": [
+          "Seguimiento"
+        ],
+        "parameters": [
+          {
+            "name": "clienteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReporteFinancieroDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReporteFinancieroDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReporteFinancieroDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SolicitudCliente": {
+      "post": {
+        "tags": [
+          "SolicitudCliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudCreditoClienteDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudCreditoClienteDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudCreditoClienteDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SolicitudCliente/GuardarDocumento": {
+      "post": {
+        "tags": [
+          "SolicitudCliente"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tipo": {
+                    "type": "string"
+                  },
+                  "archivo": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "idSolicitudCredito": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "tipo": {
+                  "style": "form"
+                },
+                "archivo": {
+                  "style": "form"
+                },
+                "idSolicitudCredito": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SolicitudCliente/cliente/{idCliente}": {
+      "get": {
+        "tags": [
+          "SolicitudCliente"
+        ],
+        "parameters": [
+          {
+            "name": "idCliente",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCreditoViewModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCreditoViewModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCreditoViewModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SolicitudCliente/ultimaSolicitudId": {
+      "get": {
+        "tags": [
+          "SolicitudCliente"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SolicitudCredito/Enlistar": {
+      "get": {
+        "tags": [
+          "SolicitudCredito"
+        ],
+        "parameters": [
+          {
+            "name": "estado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idTipoCredito",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "nombreCliente",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ordenAscendente",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "ordenarPor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "FechaSolicitud"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCredito"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCredito"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCredito"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SolicitudCredito/Insertar Nueva Solicitud Cred. S": {
+      "post": {
+        "tags": [
+          "SolicitudCredito"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudCredito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudCredito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudCredito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SolicitudCredito/Modificar Solcitud Credito S": {
+      "put": {
+        "tags": [
+          "SolicitudCredito"
+        ],
+        "parameters": [
+          {
+            "name": "idSolicitudCredito",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudCredito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudCredito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudCredito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SolicitudCredito/pendingr": {
+      "get": {
+        "tags": [
+          "SolicitudCredito"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCreditoListDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCreditoListDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudCreditoListDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SolicitudCredito/r/{id}": {
+      "get": {
+        "tags": [
+          "SolicitudCredito"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolicitudCreditoDetailDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolicitudCreditoDetailDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolicitudCreditoDetailDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SolicitudCredito"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParametroDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParametroDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParametroDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SolicitudCredito/{id}/statusr": {
+      "put": {
+        "tags": [
+          "SolicitudCredito"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudStatusDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudStatusDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudStatusDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TipoCredito": {
+      "get": {
+        "tags": [
+          "TipoCredito"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TipoCredito"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TipoCredito"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TipoCredito"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TipoCredito"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCredito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCredito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCredito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TipoCredito"
+        ],
+        "parameters": [
+          {
+            "name": "idTipoCredito",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCredito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCredito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCredito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/Login": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/retablecer-contraseña": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/Lista Usuarios": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuario/crear-cuenta-usuario": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/Editar cuenta usuario": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "idusuario",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Administrador": {
+        "required": [
+          "cargo",
+          "departamento",
+          "idUsuario",
+          "nivelAcceso",
+          "rol"
+        ],
+        "type": "object",
+        "properties": {
+          "idAdministrador": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rol": {
+            "maxLength": 50,
+            "minLength": 3,
+            "type": "string"
+          },
+          "cargo": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "departamento": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "nivelAcceso": {
+            "maximum": 10,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AlertaDTO": {
+        "type": "object",
+        "properties": {
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "solicitudId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pagoId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuditLogDTO": {
+        "type": "object",
+        "properties": {
+          "accion": {
+            "type": "string",
+            "nullable": true
+          },
+          "detalles": {
+            "type": "string",
+            "nullable": true
+          },
+          "idAdministrador": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Cliente": {
+        "required": [
+          "direccion",
+          "fechaNacimiento",
+          "fechaRegistro",
+          "genero",
+          "idUsuario",
+          "nacionalidad",
+          "telefono"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "genero": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "nacionalidad": {
+            "maxLength": 50,
+            "minLength": 3,
+            "type": "string"
+          },
+          "direccion": {
+            "maxLength": 100,
+            "minLength": 10,
+            "type": "string"
+          },
+          "telefono": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fechaNacimiento": {
+            "type": "string",
+            "format": "date"
+          },
+          "fechaRegistro": {
+            "type": "string",
+            "format": "date"
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "pagos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pago"
+            },
+            "nullable": true
+          },
+          "creditosAprobados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreditoAprobado"
+            },
+            "nullable": true
+          },
+          "solicitudesCredito": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SolicitudCredito"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ClienteDTO": {
+        "type": "object",
+        "properties": {
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNacimiento": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "genero": {
+            "type": "string",
+            "nullable": true
+          },
+          "nacionalidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Contrato": {
+        "required": [
+          "contenido",
+          "estado",
+          "fechaGeneracion",
+          "idSolicitudCredito"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaGeneracion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaFirma": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "contenido": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "estado": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "firmaDigital": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "metodoAutenticacion": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "codigoVerificacion": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContratoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaGeneracion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaFirma": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "contenido": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "firmaDigital": {
+            "type": "string",
+            "nullable": true
+          },
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "montoAprobado": {
+            "type": "number",
+            "format": "double"
+          },
+          "tasaInteres": {
+            "type": "number",
+            "format": "double"
+          },
+          "plazo": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContratoVisualizacionDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaGeneracion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaFirma": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "contenido": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "estaFirmado": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreditoAprobado": {
+        "required": [
+          "fechaAprobacion",
+          "idSolicitudCredito",
+          "montoAprobado",
+          "plazoAprobado"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaAprobacion": {
+            "type": "string",
+            "format": "date"
+          },
+          "montoAprobado": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "tasaAplicada": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "plazoAprobado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Documento": {
+        "required": [
+          "fechaCarga",
+          "idSolicitudCredito",
+          "tipo",
+          "urlArchivo"
+        ],
+        "type": "object",
+        "properties": {
+          "idDocumento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipo": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fechaCarga": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "urlArchivo": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DocumentoDTO": {
+        "type": "object",
+        "properties": {
+          "idDocumento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaCarga": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "urlArchivo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DocumentoViewModel": {
+        "type": "object",
+        "properties": {
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "archivoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaCarga": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoPago": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "EvaluacionCreditoDTO": {
+        "type": "object",
+        "properties": {
+          "decision": {
+            "type": "string",
+            "nullable": true
+          },
+          "comentarios": {
+            "type": "string",
+            "nullable": true
+          },
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idAdministrador": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FirmaContratoDTO": {
+        "type": "object",
+        "properties": {
+          "idContrato": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigoVerificacion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotificacionDTO": {
+        "type": "object",
+        "properties": {
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCreditoAprobado": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Pago": {
+        "required": [
+          "estado",
+          "fechaPago",
+          "monto"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          },
+          "clienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaPago": {
+            "type": "string",
+            "format": "date"
+          },
+          "monto": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "estado": {
+            "$ref": "#/components/schemas/EstadoPago"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PagoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaPago": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "solicitudId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PagoDetalleDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaPago": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "solicitudId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "clienteNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "montoCredito": {
+            "type": "number",
+            "format": "double"
+          },
+          "tasaAplicada": {
+            "type": "number",
+            "format": "double"
+          },
+          "plazoAprobado": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Parametro": {
+        "required": [
+          "formatoContrato",
+          "plazoMaximo",
+          "tasaInteres"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tasaInteres": {
+            "maximum": 100,
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "plazoMaximo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "formatoContrato": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "idAdministrador": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "administrador": {
+            "$ref": "#/components/schemas/Administrador"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParametroDTO": {
+        "type": "object",
+        "properties": {
+          "idParametro": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tasaInteres": {
+            "type": "number",
+            "format": "double"
+          },
+          "plazo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "formatoContrato": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReporteFinanciero": {
+        "required": [
+          "clienteId",
+          "fechaGeneracion"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          },
+          "fechaGeneracion": {
+            "type": "string",
+            "format": "date"
+          },
+          "totalPagado": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalMorosidad": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReporteFinancieroDTO": {
+        "type": "object",
+        "properties": {
+          "clienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaGeneracion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "totalPagado": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalMorosidad": {
+            "type": "number",
+            "format": "double"
+          },
+          "pagosPendientes": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pagosAtrasados": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "solicitudesActivas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "historialPagos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PagoDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RespuestaDobleFactor": {
+        "type": "object",
+        "properties": {
+          "exito": {
+            "type": "boolean"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoVerificacion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RespuestaFirmaDTO": {
+        "type": "object",
+        "properties": {
+          "exito": {
+            "type": "boolean"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaFirma": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SolicitudCredito": {
+        "required": [
+          "estado",
+          "fechaSolicitud",
+          "idCliente",
+          "idParametro",
+          "idTipoCredito",
+          "ingresos",
+          "monto"
+        ],
+        "type": "object",
+        "properties": {
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaSolicitud": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "estado": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "monto": {
+            "minimum": 0.01,
+            "type": "number",
+            "format": "double"
+          },
+          "ingresos": {
+            "minimum": 0.01,
+            "type": "number",
+            "format": "double"
+          },
+          "observaciones": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "idCliente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTipoCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idParametro": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          },
+          "tipoCredito": {
+            "$ref": "#/components/schemas/TipoCredito"
+          },
+          "parametro": {
+            "$ref": "#/components/schemas/Parametro"
+          },
+          "documentos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Documento"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SolicitudCreditoClienteDTO": {
+        "type": "object",
+        "properties": {
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "ingresos": {
+            "type": "number",
+            "format": "double"
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTipoCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCliente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idParametro": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SolicitudCreditoDetailDTO": {
+        "type": "object",
+        "properties": {
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaSolicitud": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "ingresos": {
+            "type": "number",
+            "format": "double"
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/ClienteDTO"
+          },
+          "tipoCredito": {
+            "$ref": "#/components/schemas/TipoCreditoDTO"
+          },
+          "parametro": {
+            "$ref": "#/components/schemas/ParametroDTO"
+          },
+          "documentos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DocumentoDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SolicitudCreditoListDTO": {
+        "type": "object",
+        "properties": {
+          "idSolicitudCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaSolicitud": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "nombreCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoCredito": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SolicitudCreditoViewModel": {
+        "type": "object",
+        "properties": {
+          "fechaSolicitud": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "ingresos": {
+            "type": "number",
+            "format": "double"
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoCredito": {
+            "$ref": "#/components/schemas/TipoCreditoViewModel"
+          },
+          "documentos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DocumentoViewModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SolicitudDobleFactor": {
+        "type": "object",
+        "properties": {
+          "idContrato": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "metodo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SolicitudStatusDTO": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoCredito": {
+        "required": [
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "idTipoCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "descripcion": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoCreditoDTO": {
+        "type": "object",
+        "properties": {
+          "idTipoCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoCreditoViewModel": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Usuario": {
+        "required": [
+          "email",
+          "nombre",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "password": {
+            "maxLength": 100,
+            "minLength": 8,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,1260 @@
+[
+  {
+    "ContainingType": "proyectoFinal.Controllers.AdministradorController",
+    "Method": "Post",
+    "RelativePath": "api/Administrador/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "administrador",
+        "Type": "proyectoFinal.Modelo.Administrador",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.AdministradorController",
+    "Method": "Update",
+    "RelativePath": "api/Administrador/Editar perfil adm",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "administrador",
+        "Type": "proyectoFinal.Modelo.Administrador",
+        "IsRequired": true
+      },
+      {
+        "Name": "idAdministrador",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.AdministradorController",
+    "Method": "RegistrarUsuario",
+    "RelativePath": "api/Administrador/Registro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "proyectoFinal.Modelo.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.AdministradorController",
+    "Method": "Get",
+    "RelativePath": "api/Administrador/Ver",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[proyectoFinal.Modelo.Administrador, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.AuditLogController",
+    "Method": "CreateAuditLog",
+    "RelativePath": "api/AuditLog",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "auditDTO",
+        "Type": "CooperativaFinanciera.DTOs.AuditLogDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CooperativaFinanciera.DTOs.AuditLogDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.AuditLogController",
+    "Method": "GetAuditLog",
+    "RelativePath": "api/AuditLog/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CooperativaFinanciera.DTOs.AuditLogDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ClienteController",
+    "Method": "Post",
+    "RelativePath": "api/Cliente/crear-cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "proyectoFinal.Modelo.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ClienteController",
+    "Method": "Get",
+    "RelativePath": "api/Cliente/Enlistar Clientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[proyectoFinal.Modelo.Cliente, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ClienteController",
+    "Method": "Update",
+    "RelativePath": "api/Cliente/Modificar datos cliente",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "proyectoFinal.Modelo.Cliente",
+        "IsRequired": true
+      },
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ContratoController",
+    "Method": "GetContratos",
+    "RelativePath": "api/Contrato",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[proyectoFinal.Modelo.Contrato, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ContratoController",
+    "Method": "PostContrato",
+    "RelativePath": "api/Contrato",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contrato",
+        "Type": "proyectoFinal.Modelo.Contrato",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "proyectoFinal.Modelo.Contrato",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ContratoController",
+    "Method": "GetContrato",
+    "RelativePath": "api/Contrato/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "proyectoFinal.DTOs.ContratoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ContratoController",
+    "Method": "PutContrato",
+    "RelativePath": "api/Contrato/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "contrato",
+        "Type": "proyectoFinal.Modelo.Contrato",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ContratoController",
+    "Method": "DeleteContrato",
+    "RelativePath": "api/Contrato/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ContratoController",
+    "Method": "SolicitarDobleFactor",
+    "RelativePath": "api/Contrato/auth/doblefactor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitud",
+        "Type": "proyectoFinal.DTOs.SolicitudDobleFactor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "proyectoFinal.DTOs.RespuestaDobleFactor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ContratoController",
+    "Method": "GetContratosByCliente",
+    "RelativePath": "api/Contrato/cliente/{idCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[proyectoFinal.DTOs.ContratoDTO, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ContratoController",
+    "Method": "FirmarContrato",
+    "RelativePath": "api/Contrato/firmar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firmaDTO",
+        "Type": "proyectoFinal.DTOs.FirmaContratoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "proyectoFinal.DTOs.RespuestaFirmaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ContratoController",
+    "Method": "VerContrato",
+    "RelativePath": "api/Contrato/ver/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ContratoVisualizacionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.DocumentoController",
+    "Method": "CreateDocumento",
+    "RelativePath": "api/Documento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "idSolicitudCredito",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Tipo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CooperativaFinanciera.DTOs.DocumentoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.DocumentoController",
+    "Method": "GetDocumento",
+    "RelativePath": "api/Documento/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CooperativaFinanciera.DTOs.DocumentoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.DocumentoController",
+    "Method": "DeleteDocumento",
+    "RelativePath": "api/Documento/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.DocumentoController",
+    "Method": "DownloadDocumento",
+    "RelativePath": "api/Documento/download/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.EvaluacionCreditoController",
+    "Method": "CreateEvaluacion",
+    "RelativePath": "api/EvaluacionCredito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "evaluacionDTO",
+        "Type": "CooperativaFinanciera.DTOs.EvaluacionCreditoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CooperativaFinanciera.DTOs.EvaluacionCreditoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.EvaluacionCreditoController",
+    "Method": "GetEvaluacion",
+    "RelativePath": "api/EvaluacionCredito/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CooperativaFinanciera.DTOs.EvaluacionCreditoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.NotificacionController",
+    "Method": "CreateNotificacion",
+    "RelativePath": "api/Notificacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificacionDTO",
+        "Type": "CooperativaFinanciera.DTOs.NotificacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CooperativaFinanciera.DTOs.NotificacionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.NotificacionController",
+    "Method": "GetNotificacion",
+    "RelativePath": "api/Notificacion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CooperativaFinanciera.DTOs.NotificacionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ParametroController",
+    "Method": "EliminarParametro",
+    "RelativePath": "api/Parametro/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ParametroController",
+    "Method": "CrearParametro",
+    "RelativePath": "api/Parametro/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parametro",
+        "Type": "proyectoFinal.Modelo.Parametro",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ParametroController",
+    "Method": "GetParametros",
+    "RelativePath": "api/Parametro/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[proyectoFinal.Modelo.Parametro, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ParametroController",
+    "Method": "Update",
+    "RelativePath": "api/Parametro/modificar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parametro",
+        "Type": "proyectoFinal.Modelo.Parametro",
+        "IsRequired": true
+      },
+      {
+        "Name": "idParametro",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.ReporteFinancieroController",
+    "Method": "GetReportes",
+    "RelativePath": "api/ReporteFinanciero",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fechaInicio",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaFin",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[proyectoFinal.Modelo.ReporteFinanciero, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SeguimientoController",
+    "Method": "GetAlertasBySolicitud",
+    "RelativePath": "api/Seguimiento/alertas/{solicitudId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitudId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[proyectoFinal.DTOs.AlertaDTO, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SeguimientoController",
+    "Method": "GetPagoDetalle",
+    "RelativePath": "api/Seguimiento/pago/{pagoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "proyectoFinal.DTOs.PagoDetalleDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SeguimientoController",
+    "Method": "GetPagosBySolicitud",
+    "RelativePath": "api/Seguimiento/pagos/{solicitudId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitudId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[proyectoFinal.DTOs.PagoDTO, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SeguimientoController",
+    "Method": "GetReporteFinanciero",
+    "RelativePath": "api/Seguimiento/reporte/{clienteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "proyectoFinal.DTOs.ReporteFinancieroDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SeguimientoController",
+    "Method": "GetSolicitudesByCliente",
+    "RelativePath": "api/Seguimiento/solicitudes/{clienteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CooperativaFinanciera.DTOs.SolicitudCreditoListDTO, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudClienteController",
+    "Method": "PostAsync",
+    "RelativePath": "api/SolicitudCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitudDto",
+        "Type": "proyectoFinal.DTOs.SolicitudCreditoClienteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudClienteController",
+    "Method": "GetSolicitudesPorCliente",
+    "RelativePath": "api/SolicitudCliente/cliente/{idCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[proyectoFinal.ViewModels.ViewModel\u002BSolicitudCreditoViewModel, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudClienteController",
+    "Method": "GuardarDocumento",
+    "RelativePath": "api/SolicitudCliente/GuardarDocumento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "archivo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "idSolicitudCredito",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudClienteController",
+    "Method": "GetUltimaSolicitudId",
+    "RelativePath": "api/SolicitudCliente/ultimaSolicitudId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudCreditoController",
+    "Method": "UpdateSolicitudStatus",
+    "RelativePath": "api/SolicitudCredito/{id}/statusr",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "statusDTO",
+        "Type": "CooperativaFinanciera.DTOs.SolicitudStatusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudCreditoController",
+    "Method": "Get",
+    "RelativePath": "api/SolicitudCredito/Enlistar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idTipoCredito",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombreCliente",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ordenAscendente",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ordenarPor",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[proyectoFinal.Modelo.SolicitudCredito, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudCreditoController",
+    "Method": "Post",
+    "RelativePath": "api/SolicitudCredito/Insertar Nueva Solicitud Cred. S",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitudCredito",
+        "Type": "proyectoFinal.Modelo.SolicitudCredito",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudCreditoController",
+    "Method": "Update",
+    "RelativePath": "api/SolicitudCredito/Modificar Solcitud Credito S",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitudCredito",
+        "Type": "proyectoFinal.Modelo.SolicitudCredito",
+        "IsRequired": true
+      },
+      {
+        "Name": "idSolicitudCredito",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudCreditoController",
+    "Method": "GetPendingSolicitudes",
+    "RelativePath": "api/SolicitudCredito/pendingr",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CooperativaFinanciera.DTOs.SolicitudCreditoListDTO, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudCreditoController",
+    "Method": "GetSolicitudCredito",
+    "RelativePath": "api/SolicitudCredito/r/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CooperativaFinanciera.DTOs.SolicitudCreditoDetailDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.SolicitudCreditoController",
+    "Method": "UpdateSolicitudConditions",
+    "RelativePath": "api/SolicitudCredito/r/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "parametroDTO",
+        "Type": "CooperativaFinanciera.DTOs.ParametroDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.TipoCreditoController",
+    "Method": "Get",
+    "RelativePath": "api/TipoCredito",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[proyectoFinal.Modelo.TipoCredito, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.TipoCreditoController",
+    "Method": "Post",
+    "RelativePath": "api/TipoCredito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoCredito",
+        "Type": "proyectoFinal.Modelo.TipoCredito",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.TipoCreditoController",
+    "Method": "Update",
+    "RelativePath": "api/TipoCredito",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoCredito",
+        "Type": "proyectoFinal.Modelo.TipoCredito",
+        "IsRequired": true
+      },
+      {
+        "Name": "idTipoCredito",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.UsuarioController",
+    "Method": "Post",
+    "RelativePath": "api/Usuario/crear-cuenta-usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "proyectoFinal.Modelo.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.UsuarioController",
+    "Method": "Update",
+    "RelativePath": "api/Usuario/Editar cuenta usuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "proyectoFinal.Modelo.Usuario",
+        "IsRequired": true
+      },
+      {
+        "Name": "idusuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.UsuarioController",
+    "Method": "Get",
+    "RelativePath": "api/Usuario/Lista Usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[proyectoFinal.Modelo.Usuario, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "api/Usuario/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "proyectoFinal.Modelo.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.UsuarioController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/Usuario/retablecer-contrase\u00F1a",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "proyectoFinal.Modelo.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectoFinal.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[proyectoFinal.WeatherForecast, proyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

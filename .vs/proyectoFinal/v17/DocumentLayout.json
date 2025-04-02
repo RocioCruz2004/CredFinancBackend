@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\controllers\\evaluacioncreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:controllers\\evaluacioncreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\modelo\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:modelo\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\modelo\\reportefinanciero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:modelo\\reportefinanciero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\controllers\\solicitudcreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:controllers\\solicitudcreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\controllers\\reportefinancierocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:controllers\\reportefinancierocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|c:\\universidad\\7 semestre\\2 desarrollo de sistemas ii\\proyecto\\proyectofinal\\proyectofinal (2)\\proyectofinal\\controllers\\solicitudclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F124E3-976E-4A1D-BEB2-3046F52B21D7}|proyectoFinal.csproj|solutionrelative:controllers\\solicitudclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EvaluacionCreditoController.cs",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Controllers\\EvaluacionCreditoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EvaluacionCreditoController.cs",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Controllers\\EvaluacionCreditoController.cs",
+              "RelativeToolTip": "Controllers\\EvaluacionCreditoController.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAIwGoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T01:30:27.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T15:57:28.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-01T15:53:46.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pago.cs",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Modelo\\Pago.cs",
+              "RelativeDocumentMoniker": "Modelo\\Pago.cs",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Modelo\\Pago.cs",
+              "RelativeToolTip": "Modelo\\Pago.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T15:47:39.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReporteFinanciero.cs",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Modelo\\ReporteFinanciero.cs",
+              "RelativeDocumentMoniker": "Modelo\\ReporteFinanciero.cs",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Modelo\\ReporteFinanciero.cs",
+              "RelativeToolTip": "Modelo\\ReporteFinanciero.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBQwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T15:40:35.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Modelo\\Usuario.cs",
+              "RelativeDocumentMoniker": "Modelo\\Usuario.cs",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Modelo\\Usuario.cs",
+              "RelativeToolTip": "Modelo\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T15:36:19.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Modelo\\Cliente.cs",
+              "RelativeDocumentMoniker": "Modelo\\Cliente.cs",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Modelo\\Cliente.cs",
+              "RelativeToolTip": "Modelo\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T02:55:36.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SolicitudCreditoController.cs",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Controllers\\SolicitudCreditoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SolicitudCreditoController.cs",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Controllers\\SolicitudCreditoController.cs",
+              "RelativeToolTip": "Controllers\\SolicitudCreditoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:36:11.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReporteFinancieroController.cs",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Controllers\\ReporteFinancieroController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReporteFinancieroController.cs",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Controllers\\ReporteFinancieroController.cs",
+              "RelativeToolTip": "Controllers\\ReporteFinancieroController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T04:40:05.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SolicitudClienteController.cs",
+              "DocumentMoniker": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Controllers\\SolicitudClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SolicitudClienteController.cs",
+              "ToolTip": "C:\\UNIVERSIDAD\\7 SEMESTRE\\2 DESARROLLO DE SISTEMAS II\\proyecto\\proyectoFinal\\proyectoFinal (2)\\proyectoFinal\\Controllers\\SolicitudClienteController.cs",
+              "RelativeToolTip": "Controllers\\SolicitudClienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:56:15.516Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
